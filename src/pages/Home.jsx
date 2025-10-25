@@ -1,4 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
+import Header from "../components/Header";
+import TextType from "../components/TextType";
+
 
 export default function Home() {
 
@@ -15,8 +18,7 @@ export default function Home() {
 
   return (
     <section className="text-center p-10">
-      <h1 className="text-4xl font-bold text-blue-600 mb-4">Bienvenue sur mon portfolio</h1>
-      <p className="text-gray-700">Découvrez mes projets, mes compétences et mon parcours.</p>
+      <Header />
       <nav className="flex gap-4 p-4 bg-white shadow">
       {links.map((link) => (
         <Link
@@ -28,6 +30,13 @@ export default function Home() {
         </Link>
       ))}
     </nav>
+    <TextType 
+      text={["Hello ! Bienvenue sur mon site !", "Des questions ?", "Un projet ?", "Contacte moi !"]}
+      typingSpeed={75}
+      pauseDuration={1500}
+      showCursor={true}
+      cursorCharacter="|"
+    />
     </section>
   );
 }

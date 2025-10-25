@@ -2,14 +2,14 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Skills from "./pages/Skills"; // <--- import exact
+import Skills from "./pages/Skills";
 import Professional from "./pages/Professional";
 import Personal from "./pages/Personal";
 import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gray-50">
+    <div className="min-h-screen flex flex-col items-center bg-[color:var(--background)]">
       <div className="flex-1 w-full max-w-4xl p-6">
         <Routes>
           <Route path="/" element={<Home />} />
