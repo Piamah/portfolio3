@@ -9,8 +9,8 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[color:var(--background)]">
-      <div className="flex-1 w-full max-w-4xl p-6">
+    <div className="flex bg-[color:var(--background)]">
+      <div className="flex-1 w-full">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
