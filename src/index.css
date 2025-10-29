@@ -4,6 +4,10 @@
 
 @layer base {
   :root {
+    --bg-start: #C5B6C9;
+    --bg-end: #E0CFD7;
+    --header--bg-start: #FCE4EC;
+    --header--bg-end: #F3E5F5;
     --bg: #CABCCD;
     --nav: red;
     --menu: #F9EAF6;
@@ -13,14 +17,29 @@
     --title: white; 
   }
   .dark {
-        --bg: #CABCCD;
+    --bg-start: #9E99B9;
+    --bg-end: #B0ACC4;
+    --bg: #CABCCD;
     --nav: red;
+    --menu: #CDC8E5;
     --text: blue;
     --texthover: pink;
     --bg-secodary: green;
     --title: white; 
   }
 }
+
+@font-face {
+  font-family: 'Rostex';
+  src: url('./assets/fonts/Rostex-ObliqueOutline.woff2') format('woff2'),
+       url('./assets/fonts/Rostex-ObliqueOutline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 
 @layer base {
   * {

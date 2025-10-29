@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="flex bg-[color:var(--background)]">
+    <div className="flex bg-[linear-gradient(135deg,var(--bg-start),var(--bg-end))] h-screen w-full">
       <div className="flex-1 w-full">
         <Routes>
           <Route path="/" element={<Home />} />

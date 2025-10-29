@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <div className="flex flex-row-reverse justify-between ">
- <Menu />
+        <Menu />
       </div>
       <div className="flex justify-center">
         <TextType
@@ -26,6 +26,9 @@ export default function Home() {
             showCursor={true}
             cursorCharacter="|"
           />
+      </div>
+      <div>
+        <h1 className="font-Rostex text-[128px] flex justify-center capitalize text-9xl [text-shadow:1px_1px_1px_#DF47C9,2px_2px_1px_#DF47C9]">PIAMA</h1>
       </div>
     </>
   );

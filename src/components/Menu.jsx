@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { X, Menu as MenuIcon } from "lucide-react";
-import HamburgerToggle from "./Hamburger";
 
 export default function Menu() {
   const location = useLocation();
@@ -16,7 +15,7 @@ export default function Menu() {
   ];
 
   return (
-    <div>
+    <div className="bg-[var(--menu)] p-6 rounded-bl-[40px] z-[99] shadow-lg">
       {/* Bouton MENU */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -33,11 +32,11 @@ export default function Menu() {
             className="absolute inset-0"
             onClick={() => setIsOpen(false)}
           />
-         <div className="absolute right-[-25px] top-[50px] h-full w-1/3 min-w-[280px] bg-gradient-to-br from-purple-50 to-pink-50 shadow-2xl p-8 flex flex-col items-start animate-slide-in">
+         <div className="absolute right-[-25px] top-[72px] h-full w-25% min-w-[280px] bg-[var(--menu)] [box-shadow:-5px_15px_15px_0_rgba(0,0,0,0.1)]  p-8 flex flex-col items-start animate-slide-in">
             {/* Bouton  */}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-6 right-6 text-gray-700 flex items-center gap-2"
+              className="absolute top-[25px] right-9 flex items-center gap-2"
             >
               <span className="font-semibold">FERMER</span>
               <X size={24} />
