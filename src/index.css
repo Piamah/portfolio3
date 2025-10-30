@@ -8,7 +8,8 @@
     --bg-end: #E0CFD7;
     --header--bg-start: #fae4fc;
     --header--bg-end: #F3E5F5;
-    --bg: #CABCCD;
+    --hover-text--start: #ff91d5;
+    --hover-text--end: #ed9eff;
     --nav: red;
     --menu: #F9EAF6;
     --text: blue;
@@ -16,6 +17,16 @@
     --bg-secodary: green;
     --title: white; 
   }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, var(--hover-text--start), var(--hover-text--end));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
+  }
+
+
   .dark {
     --bg-start: #9E99B9;
     --bg-end: #B0ACC4;

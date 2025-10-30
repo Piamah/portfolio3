@@ -51,7 +51,7 @@ export default function Menu() {
                   onClick={() => setIsOpen(false)} // ferme le menu après clic
                   className={`text-lg ${
                     location.pathname === link.to
-                      ? "font-bold text-[#DF47C9]"
+                      ? "font-bold gradient-text"
                       : "hover:text-[#DF47C9]"
                   }`}
                 >
