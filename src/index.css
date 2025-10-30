@@ -6,7 +6,7 @@
   :root {
     --bg-start: #C5B6C9;
     --bg-end: #E0CFD7;
-    --header--bg-start: #FCE4EC;
+    --header--bg-start: #fae4fc;
     --header--bg-end: #F3E5F5;
     --bg: #CABCCD;
     --nav: red;
@@ -19,6 +19,8 @@
   .dark {
     --bg-start: #9E99B9;
     --bg-end: #B0ACC4;
+    --header--bg-start : #dad5ddd0;
+    --header--bg-end: #ede1f3d0;
     --bg: #CABCCD;
     --nav: red;
     --menu: #CDC8E5;
@@ -37,8 +39,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
 
 
 @layer base {

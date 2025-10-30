@@ -18,7 +18,7 @@ export default function Header() {
 
       <a
         href="/"
-        className="text-lg md:text-xl font-semibold hover:text-[var(--text)] transition-colors"
+        className="text-lg md:text-xl hover:text-[#DF47C9] transition-colors"
       >
         Athénaïs Lecomte
       </a>

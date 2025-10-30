@@ -1,8 +1,15 @@
-// src/pages/Skills.jsx
+import Header from "../components/Header";
+import Menu from "../components/Menu";
+
 export default function Skills() {
   const skills = ["React", "Vite", "TailwindCSS", "JavaScript", "GitHub"];
 
   return (
+    <>
+    <Header />
+    <div className="flex flex-row-reverse justify-between ">
+      <Menu />      
+    </div>
     <section className="text-center p-10">
       <h1 className="text-3xl font-bold text-blue-600 mb-6">Mes compétences</h1>
       <div className="flex flex-wrap justify-center gap-4">
@@ -16,5 +23,6 @@ export default function Skills() {
         ))}
       </div>
     </section>
+    </>
   );
 }
