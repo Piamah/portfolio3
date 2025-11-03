@@ -10,6 +10,10 @@
     --header--bg-end: #F3E5F5;
     --hover-text--start: #ff91d5;
     --hover-text--end: #ed9eff;
+    --card-bg-start: red;
+    --card-bg-end: blue;
+    --button-bg-start: #F43ADE;
+    --button-bg-end: #9708DA;
     --nav: red;
     --menu: #F9EAF6;
     --text: blue;

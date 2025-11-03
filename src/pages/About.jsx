@@ -1,6 +1,5 @@
 import React from "react"
 import Header from "../components/Header.jsx"
-import Footer from "../components/Footer.jsx"
 import SplitText from "../components/SplitText.jsx"
 import { GoLinkExternal } from "react-icons/go"
 // import aboutChar from "../images/about_char.webp"
@@ -163,8 +162,6 @@ const About = () => {
             </div>
           </div>
       </div>
-
-      <Footer />
     </section>
   )
 }

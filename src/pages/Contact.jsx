@@ -1,5 +1,15 @@
+import Header from "../components/Header";
+import Menu from "../components/Menu";
+
+
+
 export default function Contact() {
   return (
+    <>
+    <Header />
+    <div className="flex flex-row-reverse justify-between ">
+      <Menu />
+    </div>
     <section className="text-center p-10">
       <h1 className="text-3xl font-bold text-blue-600 mb-4">Contact</h1>
       <p className="text-gray-700 mb-4">
@@ -12,5 +22,6 @@ export default function Contact() {
         M’envoyer un message
       </a>
     </section>
+    </>
   );
 }

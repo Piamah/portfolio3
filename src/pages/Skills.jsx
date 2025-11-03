@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Menu from "../components/Menu";
 
 export default function Skills() {
-  const skills = ["React", "Vite", "TailwindCSS", "JavaScript", "GitHub"];
+  const skills = ["React", "HTML", "CSS/SCSS", "NodeJS", "MongoDB", "Vite", "Tailwind", "JavaScript", "Suite Adobe", "ProCreate", "Suite Affinity", "Blender"];
 
   return (
     <>

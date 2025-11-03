@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
         return (
-        <header className="footer">
+        <div className=" bg-white">
             <a className="mentions-legales" href="/mentions-legales/" target="_blank" rel="noreferrer">Mentions légales</a>
-        </header>
+        </div>
         //Ajouter les réseaux (linkedin, instagram, twitch, spotify, github)
     );
 };

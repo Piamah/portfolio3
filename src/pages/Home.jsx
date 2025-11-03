@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import TextType from "../components/TextType";
 import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <div className="flex flex-row-reverse justify-between ">
         <Menu />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-[135px]">
         <TextType
             text={[
               "Hello ! Bienvenue sur mon site !",
