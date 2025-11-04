@@ -48,13 +48,19 @@
 
 @font-face {
   font-family: 'Rostex';
-  src: url('./assets/fonts/Rostex-ObliqueOutline.woff2') format('woff2'),
-       url('./assets/fonts/Rostex-ObliqueOutline.woff') format('woff');
+  src: url('./assets/fonts/Rostex-ObliqueOutline.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'NordiquePro';
+  src: url('./assets/fonts/NordiquePro-Semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   * {

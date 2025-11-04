@@ -9,6 +9,7 @@ export default {
   	extend: {
 		fontFamily: {
         Rostex: ['Rostex', 'sans-serif'],
+		NordiquePro: ['NordiquePro', 'sans-serif']
       },
   		borderRadius: {
   			lg: 'var(--radius)',
