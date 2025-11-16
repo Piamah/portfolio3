@@ -62,6 +62,16 @@
   font-display: swap;
 }
 
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fade {
+  animation: fadeOut 5s forwards;
+}
+
+
 @layer base {
   * {
     @apply border-border;
