@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ title, subtitle, tech, link }) => {
   return (
-    <div className="w-[200px] h-[300px] relative border border-solid border-white/40 rounded-2xl overflow-hidden group">
+    <div className="w-[200px] h-[300px] relative shadow-xl rounded-2xl overflow-hidden group">
       {/* --- bg --- */}
       <div className="w-full h-full p-1 absolute bg-[linear-gradient(to_bottom_right,var(--card-bg-start),var(--card-bg-end))]">
       </div>

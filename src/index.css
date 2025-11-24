@@ -19,7 +19,7 @@
     --button-bg-end: #9708DA;
     --nav: red;
     --menu: #F9EAF6;
-    --text: blue;
+    --text: #F43ADE ;
     --texthover: pink;
     --bg-secodary: green;
     --title: white; 
@@ -60,6 +60,14 @@
 @font-face {
   font-family: 'NordiquePro';
   src: url('./assets/fonts/NordiquePro-Semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RostexRegular';
+  src: url('./assets/fonts/Rostex-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

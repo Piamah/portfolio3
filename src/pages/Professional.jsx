@@ -49,7 +49,7 @@ const Projects = () => {
           <Menu />
         </div>
         <section className="text-center p-10">
-          <h1 className="text-3xl font-bold text-blue-600 mb-4">Projets professionnels</h1>
+          <h1 className="text-6xl font-RostexRegular text-[var(--text)] mb-4">Projets professionnels</h1>
           <p className="text-gray-700">
             Vous trouverez ici mes différents projets professionels ou réalisés lors de ma formation.
           </p>
@@ -58,7 +58,8 @@ const Projects = () => {
             <Card key={index} {...card} />
           ))}
         </div>
-        <h2 className="text-3xl font-bold text-blue-600 mb-4">Les projets un peu différents...</h2>
+        <h2 className="text-6xl font-RostexRegular bg-gradient-to-r from-[#F43ADE] to-black bg-clip-text text-transparent mb-4">
+Les projets un peu différents...</h2>
         <p>Inclure ici les différents projets qui ne sont pas linked (présentation de projet)</p>
         </section>
     </>
