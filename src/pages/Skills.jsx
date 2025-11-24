@@ -23,7 +23,7 @@ export default function Skills() {
                   <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-12 h-12"/>
+                  className="w-25 h-25"/>
                 </div>
               ))}
             </div>
@@ -38,7 +38,7 @@ export default function Skills() {
                   <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-12 h-12"/>
+                  className="w-25 h-25"/>
                 </div>
               ))}
           </div>

@@ -9,7 +9,7 @@ const Card = ({ title, subtitle, tech, link }) => {
       {/* --- contenu carte --- */}
       <div className="w-full h-full p-2 flex justify-between absolute inset-0">
       <div className="w-3/5 p-2 pt-3 pb-1.5 flex flex-col rounded-xl backdrop-blur-lg bg-white/5 text-[#E2E2E2] font-medium font-mono z-10">
-        <span className="text-xl text-[var(--card-tech)] font-semibold">{title}</span>
+        <span className="text-xl text-[var(--card-text)] font-semibold">{title}</span>
         <span className="text-xs text-[var(--card-text)]">{subtitle}</span>
         <span className="text-xs text-[var(--card-tag)] mt-auto">{tech}</span>
       </div>
