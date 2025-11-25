@@ -1,6 +1,6 @@
-import Card from "../components/Card";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
+import Card from "../components/Card";
 
 const Projects = () => {
   const cards = [
