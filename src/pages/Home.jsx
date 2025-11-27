@@ -29,7 +29,7 @@ export default function Home() {
           />
       </div>
       <div>
-        <h1 className="font-Rostex text-[128px] flex justify-center capitalize text-9xl [text-shadow:1px_1px_1px_#DF47C9,2px_2px_1px_#DF47C9]">PIAMA</h1>
+        <h1 className="font-Rostex text-[128px] text-[var(--title)]  flex justify-center capitalize text-9xl [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]">PIAMA</h1>
       </div>
     </>
   );
