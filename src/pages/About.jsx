@@ -17,11 +17,11 @@ const About = () => {
         <div className="flex flex-row-reverse justify-between ">
           <Menu />
         </div>
-      <div className="mx-5 my-20 md:mx-10">
-          <h1 className="text-left">
-            <SplitText text="À propos de moi" className="text-[36px] font-semibold" />
+      <div className="mx-5 my-20">
+          <h1 className="md:mx-10 text-left">
+            <SplitText text="A propos de moi" className="font-NordiquePro text-[36px] font-semibold" />
           </h1>
-        <div className="flex flex-col justify-between gap-6 mt-10">
+        <div className="md:mx-10 flex flex-col justify-between gap-6 mt-10">
           <p className="w-full md:w-[70%] text-justify leading-relaxed">
             Depuis toujours, je suis fascinée par le langage sous toutes ses formes. À un moment donné, 
             par le biais de mes études, j'ai pu approcher un autre type de langage totalement inconnu jusqu'alors :
@@ -29,8 +29,8 @@ const About = () => {
             <a 
               href="https://www.cnil.fr/fr/definition/apprentissage-automatique" 
               target="_blank" rel="noreferrer" 
-              className="underline hover:text-blue-600">
-              Machine Learning 
+              className="underline hover:text-[#F43ADE]">
+              Machine Learning  {" "}
               <GoLinkExternal className="inline" />
             </a>
             {" "}
@@ -40,8 +40,8 @@ const About = () => {
               href="https://www.cnil.fr/fr/definition/apprentissage-profond-deep-learning"
               target="_blank"
               rel="noreferrer"
-              className="underline hover:text-blue-600">
-              Deep Learning 
+              className="underline hover:text-[#F43ADE]">
+              Deep Learning  {" "}
               <GoLinkExternal className="inline" />
             </a>
             {" "}
@@ -56,7 +56,7 @@ const About = () => {
             <br />
           </p>
            <a
-              className="w-[180px] flex justify-center p-3 bg-[linear-gradient(135deg,var(--header--bg-start)_20%,var(--header--bg-end)_70%)] rounded-[40px] shadow-lg"
+              className=" hover:scale-105 transition-transform text-white w-[180px] flex justify-center p-3 bg-[linear-gradient(135deg,var(--hover-text--start)_0%,var(--hover-text--end)_100%)] rounded-[40px] shadow-lg"
               href="/CV_AL_042025.pdf"
               download
               target="_blank"
@@ -70,17 +70,16 @@ const About = () => {
               className="w-1/3 md:w-1/5 rounded-xl"
             /> */}
           </div>
-          {/* CHANGER ICI ASPECT */}
-          <div className=" w-[70%] bg-[linear-gradient(135deg,var(--header--bg-start)_20%,var(--header--bg-end)_70%)] rounded-[20px] shadow-lg">
-            <h1 className="text-left mt-20">
+          <div className="md:mx-10 min-w-[60%] max-w-[900px] bg-[linear-gradient(135deg,#fae4fc88_20%,#F3E5F533_70%)] rounded-[20px] shadow-lg">
+            <h1 className="p-6 text-left mt-20">
               <SplitText
                 text="Un aspect moins technique"
-                className="text-2xl font-semibold"
+                className="font-NordiquePro text-[28px] font-semibold"
               />
             </h1>
 
-            <div className="mt-10">
-              <p className="w-full md:w-[70%] text-justify leading-relaxed">
+            <div className="p-6">
+              <p className="w-full text-justify leading-relaxed">
               J'ai toujours eu une relation particulière avec ce qui m'entoure - les formes, les couleurs, les petits détails qui font tout...
               Le plus drôle, c'est que je suis aphantasique : je ne visualise rien dans ma tête. Tu me dis d'imaginer une pomme, je vais juste
               voir le mot, et encore... Pourtant, j'adore créer. Entre la suite Adobe, Clip Studio Paint, Procreate ou Affinity, j'ai testé pas mal d'outils
@@ -106,13 +105,14 @@ const About = () => {
               /> */}
             </div>
 
-            <h1 className="text-left mt-20">
+            <h1 className="p-6 text-left mt-20">
               <SplitText
                 text="Le côté un peu plus chill"
-                className="text-2xl font-semibold p-4"
+                className="font-NordiquePro text-[28px] font-semibold"
               />
             </h1>
-              <p className="w-full md:w-[70%] text-justify leading-relaxed">
+            <div className="p-6">
+              <p className="w-full text-justify leading-relaxed">
                 Parfois on en apprend plus sur quelqu'un en découvrant ce qu'il ou elle aime au quotidien. 
                 Alors, j'ai selectionné pour toi juste en dessous plusieurs choses que j'aime : 
                 une playlist avec plein de musiques que j'écoute régulièrement, un test de mon jeu préféré, et enfin, la review de mon film favori.
@@ -125,40 +125,47 @@ const About = () => {
 
             <div className="flex flex-wrap justify-start gap-10 mt-10">
               <div className="flex flex-col items-center">
+                <div className="hover:scale-105 transition-transform shadow-lg p-[10px] bg-[linear-gradient(135deg,var(--hover-text--end)_0%,var(--hover-text--start)_100%)] rounded-[20%]">
                 <a
                   href="https://open.spotify.com/playlist/2nHhXhW1yUC9pxZg4BvP7s"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Playlist Spotify"
-                  className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-full shadow-lg hover:scale-105 transition-transform"
+                  className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-[40%] shadow-lg"
                   style={{ backgroundImage: `url(${albumFav})` }}
                 />
+                </div>
                 <p className="mt-2 text-center">Ma playlist incroyable</p>
               </div>
 
               <div className="flex flex-col items-center">
+                <div className="hover:scale-105 transition-transform shadow-lg p-[10px] bg-[linear-gradient(135deg,var(--hover-text--start)_0%,var(--hover-text--end)_100%)] rounded-[20%]">
                 <a
                   href="https://www.ign.com/articles/2018/01/25/celeste-review"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Favorite game"
-                  className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-full shadow-lg hover:scale-105 transition-transform"
+                  className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-[40%] shadow-lg"
                   style={{ backgroundImage: `url(${gameFav})` }}
                 />
+                </div>
                 <p className="mt-2 text-center">Mon jeu vidéo préféré</p>
               </div>
 
               <div className="flex flex-col items-center">
+                <div className="hover:scale-105 transition-transform shadow-lg p-[10px] bg-[linear-gradient(135deg,var(--hover-text--end)_0%,var(--hover-text--start)_100%)] rounded-[20%]">
                 <a
                   href="https://www.rottentomatoes.com/m/spider_man_across_the_spider_verse"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Favorite movies"
-                  className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-full shadow-lg hover:scale-105 transition-transform"
+                  className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-[40%] shadow-lg"
                   style={{ backgroundImage: `url(${movieFav})` }}
                 />
+                </div>
                 <p className="mt-2 text-center">Mon film préféré</p>
               </div>
+            </div>
             </div>
         </div>
       </div>

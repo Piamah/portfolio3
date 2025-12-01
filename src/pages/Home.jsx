@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import TextType from "../components/TextType";
 import Menu from "../components/Menu";
-import Footer from "../components/Footer";
 
 
 export default function Home() {
