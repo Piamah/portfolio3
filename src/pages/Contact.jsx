@@ -45,7 +45,7 @@ export default function Contact() {
 
       <section className="text-center p-10">
         <div>
-          <h1 className="font-Rostex text-[86px] flex justify-start [text-shadow:1px_1px_1px_#DF47C9,2px_2px_1px_#DF47C9]">
+          <h1 className="font-Rostex text-[86px] text-[var(--title)] flex justify-start [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]">
             CONTACT
           </h1>
         </div>
@@ -109,8 +109,7 @@ export default function Contact() {
             </div>
           {/* Bouton */}
             <button type="submit" 
-            className="mt-4 text-white font-semibold py-3 px-6 rounded-2xl shadow-md transition-transform transform hover:scale-105"
-            style={{ background: "linear-gradient(90deg, var(--button-bg-start), var(--button-bg-end))" }}>
+            className="mt-4 text-white font-semibold py-3 px-6 rounded-2xl shadow-md transition-transform transform hover:scale-105 bg-[linear-gradient(135deg,var(--hover-text--start)_0%,var(--hover-text--end)_100%)] rounded-[40px] shadow-lg">
               M'envoyer un message
             </button>
 

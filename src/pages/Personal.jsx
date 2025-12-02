@@ -44,7 +44,7 @@ const Personal = () => {
         <Menu />
       </div>
       <section className="text-center p-10">
-          <h1 className="text-6xl font-RostexRegular text-[var(--text)] mb-4">Projets personnels</h1>
+          <h1 className="text-6xl font-Orbitron font-semibold mb-4">Projets personnels</h1>
           <p className="text-gray-700">
             Vous trouverez ici mes différents projets personnels.
           </p>

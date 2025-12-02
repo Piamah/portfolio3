@@ -1,0 +1,21 @@
+{
+  "about": {
+    "title": "About me",
+    "intro": "I have always been fascinated by language in all its forms. Thanks to my studies, I discovered a new type of language I have never been interested in before : computer language. When I heard about concept like <mlLink>Machine Learning</mlLink> and <dlLink>Deep Learning</dlLink>, I started asking myself questions: how do machines understand us? How do they communicate with us? To answer, I thought \"why not try?\" And boom: I loved the freedom and creativity this field offers. What I love most is that computing is always evolving. There is always something new to learn and new problems to solve! And that's pretty cool. You can find my CV just below the paragraph if you're interested!",
+    "dlLink":"/CV_AL_042025.pdf",
+    "dlText": "Download my CV"
+  },
+  "projects": {
+    "title": "Professional Projects"
+  },
+  "menu": {
+    "title": "MENU",
+    "close": "CLOSE",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "proProjects": "Professional Projects",
+    "personalProjects": "Personal Projects",
+    "contact": "Contact"
+  }
+}

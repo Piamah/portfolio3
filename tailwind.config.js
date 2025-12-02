@@ -10,7 +10,9 @@ export default {
 		fontFamily: {
         Rostex: ['Rostex', 'sans-serif'],
 		NordiquePro: ['NordiquePro', 'sans-serif'],
-		RostexRegular: ['RostexRegular', 'sans-serif']
+		RostexRegular: ['RostexRegular', 'sans-serif'],
+		Orbitron: ['Orbitron', 'sans-serif'],
+		Azonix: ['Azonix', 'sans-serif']
       },
   		borderRadius: {
   			lg: 'var(--radius)',

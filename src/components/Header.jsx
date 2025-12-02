@@ -16,12 +16,12 @@ export default function Header() {
         </a>
       </div>
 
-      <a
+      <p
         href="/"
-        className="text-lg md:text-xl hover:text-[#DF47C9] transition-colors"
+        className="font-Azonix text-gray-800 text-[16px]"
       >
         Athénaïs Lecomte
-      </a>
+      </p>
     </header>
   );
 }

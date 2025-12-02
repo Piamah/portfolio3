@@ -1,8 +1,12 @@
 import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Card from "../components/Card";
+import { useTranslation } from "react-i18next";
+
 
 const Projects = () => {
+
+  const { t } = useTranslation();
   const cards = [
     { 
       title: "Agence Booki", 
@@ -49,7 +53,10 @@ const Projects = () => {
           <Menu />
         </div>
         <section className="text-center p-10">
-          <h1 className="text-6xl font-RostexRegular text-[var(--text)] mb-4">Projets professionnels</h1>
+         <h1 className="text-6xl font-Orbitron font-semibold mb-4">
+  {t("projects.title")}
+</h1>
+
           <p className="text-gray-700">
             Vous trouverez ici mes différents projets professionels ou réalisés lors de ma formation.
           </p>
@@ -58,7 +65,7 @@ const Projects = () => {
             <Card key={index} {...card} />
           ))}
         </div>
-        <h2 className="text-6xl font-RostexRegular bg-gradient-to-r from-[#F43ADE] to-black bg-clip-text text-transparent mb-4">
+        <h2 className="text-6xl font-Orbitron font-semibold mb-4">
 Les projets un peu différents...</h2>
         <p>Inclure ici les différents projets qui ne sont pas linked (présentation de projet)</p>
         </section>
