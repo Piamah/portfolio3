@@ -5,10 +5,69 @@
     "mlLink":"https://www.cnil.fr/fr/definition/apprentissage-automatique",
     "dlLink":"/CV_AL_042025.pdf",
     "dlText": "Télécharger mon CV"
-  },  
-  "projects": {
-    "title": "Projets professionnels"
   },
+    
+  "tech": {
+    "title": "Un aspect plus artistique",
+    "intro": "J'ai toujours eu une relation particulière avec ce qui m'entoure - les formes, les couleurs, les petits détails qui font tout... Le plus drôle, c'est que je suis aphantasique : je ne visualise rien dans ma tête. Tu me dis d'imaginer une pomme, je vais juste voir le mot, et encore... Pourtant, j'adore créer. Entre la suite Adobe, Clip Studio Paint, Procreate ou Affinity, j'ai testé pas mal d'outils pour donner vie à mes idées. En tout cas, autant que faire se peut. J'ai aussi touché Blender du bout des doigts. Ce qui m'amuse, c'est que je suis très créative et pour autant, je ne visualise rien. Pourtant, ça ne m'a jamais empêché de créer ce que je veux. D'ailleurs, tu peux jeter un oeil sur ma page Instagram sur laquelle je poste parfois des WebComics que je fais quand j'ai le temps!"
+  },
+
+   "chill": {
+    "title": "Le côté un peu plus chill",
+    "intro": "Parfois on en apprend plus sur quelqu'un en découvrant ce qu'il ou elle aime au quotidien. Alors, j'ai selectionné pour toi juste en dessous plusieurs choses que j'aime : une playlist avec plein de musiques que j'écoute régulièrement, un test de mon jeu préféré, et enfin, la review de mon film favori.",
+    "spotify":"Ma playlist incroyable",
+    "game": "Mon jeu préféré",
+    "movie": "Mon film préféré"
+  },
+
+   "skill": {
+    "title": "Mon savoir-faire",
+    "prog": "En programmation web",
+    "graph": "En graphisme"
+  },
+
+  "projects": {
+    "title": "Projets professionnels",
+    "intro": "",
+    "titlecard1": "Agence Booki",
+    "titlecard2": "Sophie Bluel",
+    "titlecard3": "Nina Carducci",
+    "titlecard4": "Site KASA",
+    "titlecard5": "Vieux Grimoire",
+    "cardtext1": "Intégrer l'interface du site avec du code HTML et CSS tout en respectant la maquette Figma fournie.",
+    "cardtext2": "Développer la page de présentation, la page de connexion et la modale.",
+    "cardtext3": "Optimisation SEO, optimisation des images, optimisation du code et de sa structure.",
+    "cardtext4": "Refonte du site en JavaScript avec NodeJS et React.",
+    "cardtext5": "Développement de la partie back-end du site et mise en place de l'API.",
+    "title2": "Les projets un peu différents"
+  },
+
+ "perso": {
+    "title": "Projets personnels",
+    "intro": "",
+    "titlecard1": "Titre projet 1",
+    "titlecard2": "Titre projet 2",
+    "titlecard3": "Titre projet 3",
+    "cardtext1": "Description 1",
+    "cardtext2": "Description 2",
+    "cardtext3": "Description 3" 
+  },
+
+"contact": {
+  "title": "CONTACT",
+  "nameLabel": "Nom de l'utilisateur",
+  "namePlaceholder": "Votre nom",
+  "emailLabel": "Mail de l'utilisateur",
+  "emailPlaceholder": "votre@email.com",
+  "subjectLabel": "Objet",
+  "subjectPlaceholder": "Sujet du message",
+  "messageLabel": "Message à envoyer",
+  "messagePlaceholder": "Votre message...",
+  "button": "M'envoyer un message",
+  "success": "Votre message a bien été envoyé !",
+  "error": "Une erreur est survenue. Réessayez."
+},
+
   "menu": {
     "title": "MENU",
     "close": "FERMER",

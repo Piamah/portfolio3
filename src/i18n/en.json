@@ -5,9 +5,68 @@
     "dlLink":"/CV_AL_042025.pdf",
     "dlText": "Download my CV"
   },
-  "projects": {
-    "title": "Professional Projects"
+
+   "tech": {
+    "title": "The artistic part",
+    "intro": "Since my earliest childhood, I have a specific relationship with everything all around me - forms, colors, small details that compose everything... The funniest part, is that I have aphantasia : I cannot see anything in my head. If you ask me to imagine an apple, I will basically see the word, if that... However, I love to create things. Adobe CS, Clip Studio Paint, Procreate, Affinity... I tried many different tools to bring my ideas into being. At least, as far as possible. I also gave Blender a try. I am having fun doing art because I am really creative despite my lack of visualization. Notwithstanding, it does never prevent me creating everything I want to. For that matter, you can cast an eye over my Instagram. I sometimes post WebComics when I have time! "
   },
+
+    "chill": {
+    "title": "The relax part",
+    "intro": "Sometimes, you learn more about someone by discovering what they like and enjoy. Therefore, just below, I have selected some things I like : a playlist with different songs I use to listen, a review of my favourite game and a review of the movie I love the most.",
+    "spotify":"My incredible playlist",
+    "game": "My favourite game",
+    "movie": "My favourite movie"
+  },
+
+ "skill": {
+    "title": "My expertise",
+    "prog": "Web programming",
+    "graph": "Graphic design"
+  },
+
+  "projects": {
+    "title": "Professional Projects",
+     "intro": "",
+    "titlecard1": "Booki Agency",
+    "titlecard2": "Sophie Bluel",
+    "titlecard3": "Nina Carducci",
+    "titlecard4": "KASA's website",
+    "titlecard5": "Old Grimoire",
+    "cardtext1": "Integrate website's interface with HTML and CSS respecting the provided Figma mockup",
+    "cardtext2": "Developed the presentation page, login page and the modal interface.",
+    "cardtext3": "Improved SEO performance, optimized images, improvement of the code and its structure.",
+    "cardtext4": "Redesigned the entire website with JavaScript, NodeJS and React.",
+    "cardtext5": "Developed the back-end and implemented the API.",
+    "title2": "Some different projects"
+  },
+
+ "perso": {
+    "title": "Personal projects",
+    "intro": "",
+    "titlecard1": "Project's title 1",
+    "titlecard2": "Project's title 2",
+    "titlecard3": "Project's title 3",
+    "cardtext1": "Description 1",
+    "cardtext2": "Description 2",
+    "cardtext3": "Description 3" 
+  },
+
+"contact": {
+  "title": "CONTACT",
+  "nameLabel": "User name",
+  "namePlaceholder": "Your name",
+  "emailLabel": "User email",
+  "emailPlaceholder": "your@email.com",
+  "subjectLabel": "Subject",
+  "subjectPlaceholder": "Message subject",
+  "messageLabel": "Message to send",
+  "messagePlaceholder": "Your message...",
+  "button": "Send me a message",
+  "success": "Your message has been sent!",
+  "error": "An error occurred. Please try again."
+},
+
   "menu": {
     "title": "MENU",
     "close": "CLOSE",

@@ -1,39 +1,30 @@
 import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Card from "../components/Card";
+import { useTranslation } from "react-i18next";
 
 const Personal = () => {
+
+  const { t } = useTranslation();
   const cards = [
     { 
-      title: "Projet personnel 1", 
-      subtitle: "Test subtitle", 
-      tech: "test tech",
-      link: "https://github.com/Piamah/projet_5"
+  title: t("perso.titlecard1"),
+      subtitle: t("perso.cardtext1"),
+      tech: "HTML - CSS",
+      link: "https://github.com/Piamah/projet_2"
     },
     { 
-      title: "Projet personnel 2", 
-      subtitle: "Test.", 
-      tech: "test",
-      link: "https://github.com/Piamah/projet_5"
+      title: t("perso.titlecard2"),
+      subtitle: t("perso.cardtext2"),
+      tech: "HTML - CSS",
+      link: "https://github.com/Piamah/projet_2"
      },
     { 
-      title: "Projet personnel 3", 
-      subtitle: "Test", 
-      tech: "Lighthouse - WAVE - JavaScript",
-      link: "https://github.com/Piamah/projet_5"
-      },
-    { 
-      title: "Projet personnel 4", 
-      subtitle: "Test", 
-      tech: "JavaScript - NodeJs - React",
-      link: "https://github.com/Piamah/projet_5"
-    },
-    { 
-      title: "Projet personnel 5", 
-      subtitle: "Test la partie back-end du site et mise en place de l'API.", 
-      tech: "MongoDB - Express - NodeJS",
-      link: "https://github.com/Piamah/projet_6"
-    },
+      title: t("perso.titlecard3"),
+      subtitle: t("perso.cardtext3"),
+      tech: "HTML - CSS",
+      link: "https://github.com/Piamah/projet_2"
+      }
   ];
 
 
@@ -44,9 +35,9 @@ const Personal = () => {
         <Menu />
       </div>
       <section className="text-center p-10">
-          <h1 className="text-6xl font-Orbitron font-semibold mb-4">Projets personnels</h1>
+          <h1 className="text-6xl font-Orbitron font-semibold mb-4">{t("perso.title")}</h1>
           <p className="text-gray-700">
-            Vous trouverez ici mes différents projets personnels.
+            {t("perso.intro")}
           </p>
         <div className="flex flex-wrap gap-6 justify-center p-8 bg-[var(--bg)]">
           {cards.map((card, index) => (

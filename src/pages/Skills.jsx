@@ -2,8 +2,11 @@ import Header from "../components/Header";
 import Menu from "../components/Menu";
 import { skillsCode } from "../data/skills";
 import { skillsGraph } from "../data/skills";
+import { Trans, useTranslation } from "react-i18next";
 
-export default function Skills() {
+const Skill = () => {
+   const { t } = useTranslation();
+
   return (
     <>
     <Header />
@@ -12,9 +15,9 @@ export default function Skills() {
     </div>
     <section className="text-center p-5">
       <div className="flex flex-col justify-between h-screen">
-        <h1 className="text-[36px] font-Orbitron font-semibold ">Mon savoir-faire</h1>
+        <h1 className="text-[36px] font-Orbitron font-semibold ">{t("skill.title")} </h1>
         <div className="flex flex-col items-start">
-          <h2 className="text-[24px] font-Orbitron font-semibold mb-6">En programmation web</h2>
+          <h2 className="text-[24px] font-Orbitron font-semibold mb-6">{t("skill.prog")} </h2>
             <div className="flex flex-wrap justify-center gap-4">
               {skillsCode.map((skill) => (
                 <div
@@ -29,7 +32,7 @@ export default function Skills() {
             </div>
         </div>
         <div className="flex flex-col items-start">
-          <h2 className="text-[24px] font-Orbitron font-semibold mb-6 ">En graphisme</h2>
+          <h2 className="text-[24px] font-Orbitron font-semibold mb-6 ">{t("skill.graph")} </h2>
             <div className="flex flex-wrap justify-center gap-4">
               {skillsGraph.map((skill) => (
                 <div
@@ -49,3 +52,5 @@ export default function Skills() {
     </>
   );
 }
+
+export default Skill

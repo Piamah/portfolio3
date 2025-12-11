@@ -9,32 +9,32 @@ const Projects = () => {
   const { t } = useTranslation();
   const cards = [
     { 
-      title: "Agence Booki", 
-      subtitle: "Intégrer l'interface du site avec du code HTML et CSS tout en  respectant la maquette Figma fournie.", 
+      title: t("projects.titlecard1"),
+      subtitle: t("projects.cardtext1"),
       tech: "HTML - CSS",
       link: "https://github.com/Piamah/projet_2"
     },
     { 
-      title: "Sophie Bluel", 
-      subtitle: "Développer la page de présentation, la page de connexion et la modale.", 
+      title: t("projects.titlecard2"),
+      subtitle: t("projects.cardtext2"),
       tech: "HTML - CSS JavaScript",
       link: "https://github.com/Piamah/Portfolio-architecte-sophie-bluel"
     },
     { 
-      title: "Nina Carducci", 
-      subtitle: "Optimisation SEO, optimisation des images, optimisation du code et de sa structure.", 
+      title: t("projects.titlecard3"),
+      subtitle: t("projects.cardtext3"),
       tech: "Lighthouse - WAVE - JavaScript",
       link: "https://github.com/Piamah/piama.github.io"
     },
     { 
-      title: "Site KASA", 
-      subtitle: "Refonte du site en JavaScript avec NodeJS et React.", 
+      title: t("projects.titlecard4"),
+      subtitle: t("projects.cardtext4"),
       tech: "JavaScript - NodeJs - React",
       link: "https://github.com/Piamah/projet_5"
     },
     { 
-      title: "Vieux Grimoire", 
-      subtitle: "Développement de la partie back-end du site et mise en place de l'API.", 
+      title: t("projects.titlecard5"),
+      subtitle: t("projects.cardtext5"), 
       tech: "MongoDB - Express - NodeJS",
       link: "https://github.com/Piamah/projet_6"
     },
@@ -58,7 +58,7 @@ const Projects = () => {
 </h1>
 
           <p className="text-gray-700">
-            Vous trouverez ici mes différents projets professionels ou réalisés lors de ma formation.
+             {t("projects.intro")}
           </p>
         <div className="flex flex-wrap gap-6 justify-center p-8 bg-[var(--bg)]">
           {cards.map((card, index) => (
@@ -66,7 +66,7 @@ const Projects = () => {
           ))}
         </div>
         <h2 className="text-6xl font-Orbitron font-semibold mb-4">
-Les projets un peu différents...</h2>
+          {t("projects.title2")}</h2>
         <p>Inclure ici les différents projets qui ne sont pas linked (présentation de projet)</p>
         </section>
     </>
