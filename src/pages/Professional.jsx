@@ -65,9 +65,6 @@ const Projects = () => {
             <Card key={index} {...card} />
           ))}
         </div>
-        <h2 className="text-6xl font-Orbitron font-semibold mb-4">
-          {t("projects.title2")}</h2>
-        <p>Inclure ici les différents projets qui ne sont pas linked (présentation de projet)</p>
         </section>
     </>
   );

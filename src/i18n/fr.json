@@ -1,4 +1,12 @@
 {
+
+"home": {
+    "title1": "Hello ! Bienvenue sur mon site !",
+    "title2": "Des questions ?",
+    "title3": "Un projet ?",
+    "title4": "Contacte moi !"
+  },
+
   "about": {
     "title": "À propos de moi",
     "intro": "Depuis toujours, je suis fascinée par le langage sous toutes ses formes. À un moment donné, par le biais de mes études, j'ai pu approcher un autre type de langage totalement inconnu jusqu'alors : celui du langage… informatique. C'est en découvrant des notions comme le <mlLink>Machine Learning</mlLink> et le <dlLink>Deep Learning</dlLink> que j'ai commencé à me poser plusieurs questions : comment est-ce que les machines nous comprennent ? Comment arrivent-elles à communiquer avec nous ? Pour y répondre, je me suis dit \"après tout, pourquoi ne pas essayer ?\". Et là, boom : j'ai adoré la liberté et la créativité que ce domaine offre. Puis, ce qui me plaît par dessus tout, c'est que l'informatique évolue sans arrêt. Il y a toujours quelque chose de nouveau à apprendre et de nouveaux problèmes à résoudre! Et ça, c'est plutôt cool. Tu pourras retrouver mon CV juste en bas du paragraphe si tu es plus intéressé.e !",

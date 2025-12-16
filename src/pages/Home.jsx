@@ -2,10 +2,20 @@ import { Link, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import TextType from "../components/TextType";
 import Menu from "../components/Menu";
+import { useTranslation } from "react-i18next";
 
 
 export default function Home() {
   const location = useLocation();
+  const { t } = useTranslation();
+
+    const titles = [
+    t("home.title1"),
+    t("home.title2"),
+    t("home.title3"),
+    t("home.title4"),
+  ];
+
 
   return (
     <>
@@ -15,12 +25,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center pb-[135px]">
         <TextType
-            text={[
-              "Hello ! Bienvenue sur mon site !",
-              "Des questions ?",
-              "Un projet ?",
-              "Contacte moi !",
-            ]}
+            text= {titles}
             typingSpeed={75}
             pauseDuration={1500}
             showCursor={true}
