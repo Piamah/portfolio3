@@ -5,7 +5,7 @@ export const skillsCode = [
     {name: "vite", icon: "/assets/icons/vite.png"},
     {name: "react", icon: "/assets/icons/react.png"},
     {name: "javascript", icon: "/assets/icons/javascript.png"},
-    {name: "node", icon: "/assets/icons/nodejs.png"},
+    {name: "nodejs", icon: "/assets/icons/nodejs.png"},
     {name: "mongodb", icon: "/assets/icons/mongodb.png"}
 ];
 
