@@ -1,0 +1,1 @@
+<p>exemple de mention légale</p>

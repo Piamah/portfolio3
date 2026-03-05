@@ -11,16 +11,17 @@ export default function Header() {
           target="_blank"
           rel="noreferrer"
           className="flex items-center"
-        >
+          >
           <img src={logo} alt="Logo Piama" className="w-auto h-10 md:h-12" />
         </a>
       </div>
-
-      <p
-        href="/"
-        className="font-Azonix text-gray-800 text-[16px]"
-      >
-        Athénaïs Lecomte
+      <a href="#about-section">A propos</a>
+      <a href="#chill-section">Un peu plus sur moi</a>
+      <a href="#projects-section">Projets</a>
+      <a href="#skills-section">Compétences</a>
+      <a href="#contact-section">Contact</a>
+      <p href="/" className="font-Azonix text-gray-800 text-[16px]">
+      Athénaïs Lecomte
       </p>
     </header>
   );
