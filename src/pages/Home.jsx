@@ -255,11 +255,10 @@ export default function Home() {
                 <span className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55" style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
                   — en dehors du code —
                 </span>
-                <h3
-                  className="mt-2 font-DMSerifDisplay text-[clamp(1.3rem,3vw,2rem)] tracking-[0.04em] text-[#685173]">
-                  {t("chill.title")}
-                </h3>
-                <div className="mt-3 h-[2px] w-12 rounded-full"style={{ background: "linear-gradient(90deg, #f43a97, #bb6eaa, transparent)" }} />
+                  <h3
+                    className="mt-2 font-DMSerifDisplay text-[clamp(1.3rem,3vw,2rem)] tracking-[0.04em] text-[#685173]">
+                    {t("chill.title")}
+                  </h3>
               </div>
 
                 {/* Texte */}
@@ -366,9 +365,7 @@ export default function Home() {
           >
             {t("projects.title")}
           </h2>
-          <div className="mt-3 h-[2.5px] w-16 rounded-full"
-            style={{ background: "linear-gradient(90deg, #f43a97, #bb6eaa, transparent)" }} />
-        </div>
+          </div>
 
         {/* Intro */}
         <p className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] mb-8 opacity-80 w-full md:w-[65%] leading-relaxed">
@@ -397,13 +394,11 @@ export default function Home() {
     >
       — mes créations —
     </span>
-    <h2
-      className="mt-2 font-CormorantGaramond text-[clamp(2.2rem,6vw,3.8rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]"
-    >
-      {t("perso.title")}
-    </h2>
-    <div className="mt-3 h-[2.5px] w-16 rounded-full"
-      style={{ background: "linear-gradient(90deg, #f43a97, #bb6eaa, transparent)" }} />
+      <h2
+        className="mt-2 font-CormorantGaramond text-[clamp(2.2rem,6vw,3.8rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]"
+      >
+        {t("perso.title")}
+      </h2>
   </div>
 
   {/* Intro */}

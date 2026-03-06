@@ -1,41 +1,85 @@
 import React from "react";
+import { GoLinkExternal } from "react-icons/go";
 
 const Card = ({ title, subtitle, tech, link }) => {
   return (
-    <div className="w-[200px] h-[300px] relative shadow-xl rounded-2xl overflow-hidden group">
-      {/* --- bg --- */}
-      <div className="w-full h-full p-1 absolute bg-[linear-gradient(to_bottom_right,var(--card-bg-start),var(--card-bg-end))]">
-      </div>
-      {/* --- contenu carte --- */}
-      <div className="w-full h-full p-2 flex justify-between absolute inset-0">
-      <div className="w-3/5 p-2 pt-3 pb-1.5 flex flex-col rounded-xl backdrop-blur-lg bg-white/5 text-[#E2E2E2] font-medium font-mono z-10">
-        <span className="text-xl text-[var(--card-text)] font-semibold">{title}</span>
-        <span className="text-xs text-[var(--card-text)]">{subtitle}</span>
-        <span className="text-xs text-[var(--card-tag)] mt-auto">{tech}</span>
-      </div>
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative flex flex-col justify-between w-[260px] min-h-[180px] rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl cursor-pointer no-underline"
+      style={{
+        background: "rgba(255,255,255,0.32)",
+        border: "1.5px solid rgba(104,81,115,0.18)",
+        backdropFilter: "blur(12px)",
+        boxShadow: "0 4px 20px rgba(104,81,115,0.1), inset 0 1px 0 rgba(255,255,255,0.55)",
+      }}
+    >
 
-        <div className="h-full pt-2 flex flex-col items-end text-white/50">
-          {/* --- flèche cliquable --- */}
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 h-8 mt-auto flex items-center justify-center rounded-full backdrop-blur-lg bg-gray-50/20 cursor-pointer transition-all duration-300 hover:bg-gray-50/30"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 12 12"
-              className="w-4 h-4 text-white"
+      {/* Glow hover en arrière-plan */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+        style={{ background: "radial-gradient(circle at 30% 0%, #f43a9710 0%, transparent 65%)" }}
+      />
+
+      <div className="relative z-10 p-5 flex flex-col gap-3 h-full">
+
+        {/* Tags tech */}
+        <div className="flex flex-wrap gap-1.5">
+          {tech.split("-").map((t, i) => (
+            <span
+              key={i}
+              className="text-[0.55rem] tracking-[0.15em] uppercase px-2 py-0.5 rounded-full font-Jost font-semibold"
+              style={{
+                background: "rgba(244,58,151,0.1)",
+                border: "1px solid rgba(244,58,151,0.2)",
+                color: "#f43a97",
+              }}
             >
-              <path
-                d="M4.646 2.146a.5.5 0 0 0 0 .708L7.793 6L4.646 9.146a.5.5 0 1 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
-                fill="currentColor"
-              />
-            </svg>
-          </a>
+              {t.trim()}
+            </span>
+          ))}
         </div>
+
+        {/* Titre */}
+        <h3
+          className="font-DMSerifDisplay text-[1.05rem] leading-snug tracking-[0.02em] transition-colors duration-200 group-hover:text-[#f43a97]"
+          style={{ color: "#685173" }}
+        >
+          {title}
+        </h3>
+
+        {/* Sous-titre */}
+        <p
+          className="font-Jost text-[0.78rem] leading-relaxed opacity-70 flex-1"
+          style={{ color: "#685173" }}
+        >
+          {subtitle}
+        </p>
+
+        {/* Footer — lien */}
+        <div className="flex items-center justify-between mt-2 pt-3"
+          style={{ borderTop: "1px solid rgba(104,81,115,0.1)" }}
+        >
+          <span
+            className="font-Jost text-[0.6rem] tracking-[0.2em] uppercase opacity-50"
+            style={{ color: "#685173" }}
+          >
+            Voir le projet
+          </span>
+          <span
+            className="w-7 h-7 flex items-center justify-center rounded-full transition-all duration-200 group-hover:scale-110"
+            style={{
+              background: "linear-gradient(135deg, #f43a97, #bb6eaa)",
+              boxShadow: "0 2px 10px rgba(244,58,151,0.3)",
+            }}
+          >
+            <GoLinkExternal className="text-white text-[0.7rem]" />
+          </span>
+        </div>
+
       </div>
-    </div>
+    </a>
   );
 };
 
