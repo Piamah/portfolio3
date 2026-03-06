@@ -12,7 +12,8 @@ export default {
 		NordiquePro: ['NordiquePro', 'sans-serif'],
 		RostexRegular: ['RostexRegular', 'sans-serif'],
 		Orbitron: ['Orbitron', 'sans-serif'],
-		Azonix: ['Azonix', 'sans-serif']
+		Azonix: ['Azonix', 'sans-serif'],
+		CormorantGaramond: ["Cormorant Garamond", "serif"],
       },
   		borderRadius: {
   			lg: 'var(--radius)',

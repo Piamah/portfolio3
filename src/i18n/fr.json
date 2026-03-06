@@ -1,5 +1,11 @@
 {
 
+"nav" : {
+    "title1": "A propos",
+    "title2": "Projets",
+    "title3": "Contact"
+},
+
 "home": {
     "title1": "Hello ! Bienvenue sur mon site !",
     "title2": "Des questions ?",

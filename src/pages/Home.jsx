@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
-import TextType from "../components/TextType";
 import { Trans, useTranslation } from "react-i18next";
 import SplitText from "../components/SplitText.jsx"
 import { GoLinkExternal } from "react-icons/go"
@@ -118,17 +117,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex justify-center pb-[135px]">
-        <TextType
-            text= {titles}
-            typingSpeed={75}
-            pauseDuration={1500}
-            showCursor={true}
-            cursorCharacter="|"
-          />
-      </div>
       <div>
-        <h1 className="font-Rostex text-[128px] text-[var(--title)]  flex justify-center capitalize text-9xl [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]">PIAMA</h1>
+        <h1 className="font-Rostex text-[128px] text-[var(--title)]  flex justify-center p-10 m-20 capitalize text-9xl [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]">PIAMA</h1>
       </div>
       <TechTicker />
       <section className="flex flex-col min-h-screen">
@@ -139,12 +129,13 @@ export default function Home() {
             <h2 className="md:mx-10 text-left">
               <SplitText 
               text={t("about.title")} 
-              className="font-Orbitron text-[36px] font-semibold"
+              className="font-CormorantGaramond text-[clamp(2.5rem,6vw,4rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]"
               />
             </h2>
             {/* Text */}
-          <div className="md:mx-10 flex flex-col justify-between gap-6 mt-10">
-            <p className="w-full md:w-[70%] text-justify leading-relaxed">
+
+          <div className="font-Jost text-[clamp(0.9rem,2vw,1.1rem)] md:mx-10 flex flex-col justify-between gap-6 mt-10">
+            <p className="text-[#685173] w-full md:w-[70%] text-justify leading-relaxed">
             <Trans
               i18nKey="about.intro"
               components={{
@@ -183,167 +174,251 @@ export default function Home() {
               </a>
               
             {/* *********CHILL SECTION*********** */}
+         <div
+  className="md:mx-10 min-w-[60%] max-w-[900px] rounded-2xl mt-16"
+  id="chill-section"
+  style={{
+    background: "rgba(255,255,255,0.28)",
+    border: "1.5px solid rgba(104,81,115,0.15)",
+    backdropFilter: "blur(12px)",
+    boxShadow: "0 8px 32px rgba(104,81,115,0.08), inset 0 1px 0 rgba(255,255,255,0.5)",
+  }}
+>
+  <div className="p-8">
 
-            </div>
-            <div className="md:mx-10 min-w-[60%] max-w-[900px] bg-[linear-gradient(135deg,#fae4fc88_20%,#F3E5F533_70%)] rounded-[20px] shadow-lg"
-            id="chill-section">
-              <h3 className="p-6 text-left mt-20">
-                <SplitText
-                  text={t("tech.title")}
-                  className="font-Orbitron text-[28px] font-semibold"
-                />
-              </h3>
-              {/* Text 1 */}
-              <div className="p-6">
-                <p className="w-full text-justify leading-relaxed">
-                <Trans
-              i18nKey="tech.intro"
-              />
-                {/* Instagram */}
-                  <a
-                    href="https://www.instagram.com/piama._/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex mt-3 underline hover:text-blue-600"
+    {/* Title */}
+    <div className="mb-6">
+      <span
+        className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55"
+        style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
+      >
+        — un peu plus sur moi —
+      </span>
+      <h3
+        className="mt-2 font-DMSerifDisplay text-[clamp(1.3rem,3vw,2rem)] tracking-[0.04em] text-[#685173]"
+      >
+        {t("tech.title")}
+      </h3>
+    </div>
+
+    {/* Text */}
+    <p
+      className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] text-justify leading-relaxed w-full"
+    >
+      <Trans i18nKey="tech.intro" />
+    </p>
+
+    {/* Instagram link */}
+    <a
+      href="https://www.instagram.com/piama._/"
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded-full transition-all duration-200 hover:scale-105"
+      style={{
+        background: "linear-gradient(135deg, #f43a9715, #bb6eaa15)",
+        border: "1.5px solid rgba(244,58,151,0.25)",
+        color: "#f43a97",
+        fontFamily: "'Jost', sans-serif",
+        fontSize: "0.75rem",
+        fontWeight: 600,
+        letterSpacing: "0.1em",
+        textTransform: "uppercase",
+      }}
+    >
+      {/* Icon Instagram SVG */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="15"
+        height="15"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      </svg>
+      piama._
+    </a>
+
+  </div>
+</div>
+
+            {/* *********CHILL SECTION (2)***********  */}
+            <div className="md:mx-10 min-w-[60%] max-w-[900px]" id="chill-section">
+
+              {/* Titre sous-section */}
+              <div className="mt-20 mb-8">
+                <span className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55" style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
+                  — en dehors du code —
+                </span>
+                <h3
+                  className="mt-2 font-DMSerifDisplay text-[clamp(1.3rem,3vw,2rem)] tracking-[0.04em] text-[#685173]">
+                  {t("chill.title")}
+                </h3>
+                <div className="mt-3 h-[2px] w-12 rounded-full"style={{ background: "linear-gradient(90deg, #f43a97, #bb6eaa, transparent)" }} />
+              </div>
+
+                {/* Texte */}
+                <p className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] text-justify leading-relaxed w-full md:w-[80%]">
+                  <Trans 
+                    i18nKey="chill.intro" 
+                  />
+                </p>
+
+              {/* Cards loisirs */}
+              <div className="flex flex-wrap justify-start gap-8 mt-10">
+
+                {/* Spotify */}
+                <div className="flex flex-col items-center gap-3">
+                  <div
+                    className="hover:scale-105 transition-transform p-[6px] rounded-[20%]"
+                    style={{
+                      background: "linear-gradient(135deg, #ed9eff, #ff91d5)",
+                      boxShadow: "0 4px 18px rgba(244,58,151,0.2)",
+                    }}>
+                    <a
+                      href="https://open.spotify.com/playlist/2nHhXhW1yUC9pxZg4BvP7s"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={t("chill.spotify")}
+                      className="block w-[18vh] h-[18vh] bg-cover bg-center rounded-[18%]"
+                      style={{ backgroundImage: `url(${albumFav})` }}
+                    />
+                  </div>
+                  <p
+                    className="text-center text-[0.7rem] tracking-[0.15em] uppercase"
+                    style={{ color: "#685173", fontFamily: "'Jost', sans-serif", opacity: 0.7 }}>
+                    {t("chill.spotify")}
+                  </p>
+                </div>
+
+                {/* Jeu favori */}
+                <div className="flex flex-col items-center gap-3">
+                  <div
+                    className="hover:scale-105 transition-transform p-[6px] rounded-[20%]"
+                    style={{
+                      background: "linear-gradient(135deg, #ff91d5, #ed9eff)",
+                      boxShadow: "0 4px 18px rgba(244,58,151,0.2)",}}>
+                    <a
+                      href="https://www.ign.com/articles/2018/01/25/celeste-review"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={t("chill.game")}
+                      className="block w-[18vh] h-[18vh] bg-cover bg-center rounded-[18%]"
+                      style={{ backgroundImage: `url(${gameFav})` }}
+                    />
+                  </div>
+                  <p
+                    className="text-center text-[0.7rem] tracking-[0.15em] uppercase"
+                    style={{ color: "#685173", fontFamily: "'Jost', sans-serif", opacity: 0.7 }}
                   >
-                    INSERER ICI LOGO INSTAGRAM AVEC ECRIT PIAMA
-                  </a>
-                </p>
-              </div>
+                    {t("chill.game")}
+                  </p>
+                </div>
 
-              {/* *********CHILL SECTION (2)***********  */}
-              
-              <h4 className="p-6 text-left mt-20">
-                <SplitText
-                  text={t("chill.title")} 
-                  className="font-Orbitron text-[28px] font-semibold"
-                />
-              </h4>
-              {/* Text 2*/}
-              <div className="p-6">
-                <p className="w-full text-justify leading-relaxed">
-                <Trans
-              i18nKey="chill.intro"
-              />
-                </p>
-              {/*  Link (Spotify)   */}
-              <div className="flex flex-wrap justify-start gap-10 mt-10">
-                <div className="flex flex-col items-center">
-                  <div className="hover:scale-105 transition-transform shadow-lg p-[10px] bg-[linear-gradient(135deg,var(--hover-text--end)_0%,var(--hover-text--start)_100%)] rounded-[20%]">
-                  <a
-                    href="https://open.spotify.com/playlist/2nHhXhW1yUC9pxZg4BvP7s"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={t("chill.spotify")}
-                    className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-[40%] shadow-lg"
-                    style={{ backgroundImage: `url(${albumFav})` }}
-                  />
+                {/* Film favori */}
+                <div className="flex flex-col items-center gap-3">
+                  <div
+                    className="hover:scale-105 transition-transform p-[6px] rounded-[20%]"
+                    style={{
+                      background: "linear-gradient(135deg, #ed9eff, #ff91d5)",
+                      boxShadow: "0 4px 18px rgba(244,58,151,0.2)",
+                    }}
+                  >
+                    <a
+                      href="https://www.rottentomatoes.com/m/spider_man_across_the_spider_verse"
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={t("chill.movie")}
+                      className="block w-[18vh] h-[18vh] bg-cover bg-center rounded-[18%]"
+                      style={{ backgroundImage: `url(${movieFav})` }}
+                    />
                   </div>
-                  <p className="mt-2 text-center">{t("chill.spotify")}</p>
-                </div>
-                {/*  Link (Fav game)   */}
-                <div className="flex flex-col items-center">
-                  <div className="hover:scale-105 transition-transform shadow-lg p-[10px] bg-[linear-gradient(135deg,var(--hover-text--start)_0%,var(--hover-text--end)_100%)] rounded-[20%]">
-                  <a
-                    href="https://www.ign.com/articles/2018/01/25/celeste-review"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={t("chill.game")}
-                    className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-[40%] shadow-lg"
-                    style={{ backgroundImage: `url(${gameFav})` }}
-                  />
-                  </div>
-                  <p className="mt-2 text-center">{t("chill.game")}</p>
-                </div>
-                {/*  Link (Fav movie)   */}
-                <div className="flex flex-col items-center">
-                  <div className="hover:scale-105 transition-transform shadow-lg p-[10px] bg-[linear-gradient(135deg,var(--hover-text--end)_0%,var(--hover-text--start)_100%)] rounded-[20%]">
-                  <a
-                    href="https://www.rottentomatoes.com/m/spider_man_across_the_spider_verse"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={t("chill.movie")}
-                    className="block w-[20vh] h-[20vh] bg-cover bg-center rounded-[40%] shadow-lg"
-                    style={{ backgroundImage: `url(${movieFav})` }}
-                  />
-                  </div>
-                  <p className="mt-2 text-center">{t("chill.movie")}</p>
+                  <p
+                    className="text-center text-[0.7rem] tracking-[0.15em] uppercase"
+                    style={{ color: "#685173", fontFamily: "'Jost', sans-serif", opacity: 0.7 }}
+                  >
+                    {t("chill.movie")}
+                  </p>
                 </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
 
         {/* *********PROFESSIONAL PROJECTS*********** */}
-      <div id="projects-section">
-        <h5 className="p-6 text-left mt-20">
-          <SplitText
-            text={t("chill.title")} 
-            className="font-Orbitron text-[28px] font-semibold"
-          />
-        </h5>
-          <p className="text-gray-700">
-              {t("projects.intro")}
-          </p>
-          <div className="flex flex-wrap gap-6 justify-center p-8 bg-[var(--bg)]">
-            {cards.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
-          </div>
-      </div>
+      <div id="projects-section" className="mx-5 md:mx-10 mt-28">
 
-        {/* *********PERSONAL PROJECTS*********** */}
+        {/* Titre section */}
+        <div className="mb-10">
+          <span
+            className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55"
+            style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
+          >
+            — expériences —
+          </span>
+          <h2
+            className="mt-2 font-CormorantGaramond text-[clamp(2.2rem,6vw,3.8rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]"
+          >
+            {t("projects.title")}
+          </h2>
+          <div className="mt-3 h-[2.5px] w-16 rounded-full"
+            style={{ background: "linear-gradient(90deg, #f43a97, #bb6eaa, transparent)" }} />
+        </div>
 
-      <section className="text-center p-10">
-        <h6 className="text-6xl font-Orbitron font-semibold mb-4">{t("perso.title")}</h6>
-        <p className="text-gray-700">
-          {t("perso.intro")}
+        {/* Intro */}
+        <p className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] mb-8 opacity-80 w-full md:w-[65%] leading-relaxed">
+          {t("projects.intro")}
         </p>
-        <div className="flex flex-wrap gap-6 justify-center p-8 bg-[var(--bg)]">
-          {cardsperso.map((card, index) => (
+
+        {/* Cards */}
+        <div className="flex flex-wrap gap-6 justify-start">
+          {cards.map((card, index) => (
             <Card key={index} {...card} />
           ))}
         </div>
-      </section>
+      </div>
 
-        {/* *********SKILLS***********  */}
 
-        <section className="text-center p-5" id="skills-section">
-              <div className="flex flex-col justify-between h-screen">
-                <h1 className="text-[36px] font-Orbitron font-semibold ">{t("skill.title")} </h1>
-                <div className="flex flex-col items-start">
-                  <h2 className="text-[24px] font-Orbitron font-semibold mb-6">{t("skill.prog")} </h2>
-                    <div className="flex flex-wrap justify-center gap-4">
-                      {skillsCode.map((skill) => (
-                        <div
-                          key={skill.name}
-                          className="flex flex-col items-center justify-center pr-[15px]">
-                          <img
-                          src={skill.icon}
-                          alt={skill.name}
-                          className="w-25 h-25"/>
-                        </div>
-                      ))}
-                    </div>
-                </div>
-                <div className="flex flex-col items-start">
-                  <h2 className="text-[24px] font-Orbitron font-semibold mb-6 ">{t("skill.graph")} </h2>
-                    <div className="flex flex-wrap justify-center gap-4">
-                      {skillsGraph.map((skill) => (
-                        <div
-                          key={skill.name}
-                          className="flex flex-col items-center justify-center pr-[15px]">
-                          <img
-                          src={skill.icon}
-                          alt={skill.name}
-                          className="w-25 h-25"/>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              </div>
-              {/* <a target="_blank" href="https://icons8.com/icon/12239/html">HTML</a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>*/}
-            </section>
+        {/* *********PERSONAL PROJECTS*********** */}
+
+      
+<div className="mx-5 md:mx-10 mt-28 mb-20">
+
+  {/* Titre section */}
+  <div className="mb-10">
+    <span
+      className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55"
+      style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}
+    >
+      — mes créations —
+    </span>
+    <h2
+      className="mt-2 font-CormorantGaramond text-[clamp(2.2rem,6vw,3.8rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]"
+    >
+      {t("perso.title")}
+    </h2>
+    <div className="mt-3 h-[2.5px] w-16 rounded-full"
+      style={{ background: "linear-gradient(90deg, #f43a97, #bb6eaa, transparent)" }} />
+  </div>
+
+  {/* Intro */}
+  <p className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] mb-8 opacity-80 w-full md:w-[65%] leading-relaxed">
+    {t("perso.intro")}
+  </p>
+
+  {/* Cards */}
+  <div className="flex flex-wrap gap-6 justify-start">
+    {cardsperso.map((card, index) => (
+      <Card key={index} {...card} />
+    ))}
+  </div>
+
+</div>
 
         {/* *********CONTACT*********** */}
 
