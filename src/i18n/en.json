@@ -1,10 +1,21 @@
 {
+
+"meta": {
+    "title": "Piama — Front-End Web Developer",
+    "description": "Piama's portfolio — front-end web developer passionate about React, JavaScript and design. Explore my projects and get in touch."
+},
+
+"nav" : {
+    "title1": "About me",
+    "title2": "Projects",
+    "title3": "Contact"
+},
    
-"home": {
-    "title1": "Hello! Welcome to my website!",
-    "title2": "Any question?",
-    "title3": "A project?",
-    "title4": "Contact me!"
+"subtitle": {
+    "title1": "— A little bit more about me —",
+    "title2": "— A personal spectrum —",
+    "title3": "— Professional section —",
+    "title4": "— Personal section —"
   },
   
   "about": {
@@ -35,7 +46,6 @@
 
   "projects": {
     "title": "Professional Projects",
-     "intro": "",
     "titlecard1": "Booki Agency",
     "titlecard2": "Sophie Bluel",
     "titlecard3": "Nina Carducci",
@@ -45,19 +55,21 @@
     "cardtext2": "Developed the presentation page, login page and the modal interface.",
     "cardtext3": "Improved SEO performance, optimized images, improvement of the code and its structure.",
     "cardtext4": "Redesigned the entire website with JavaScript, NodeJS and React.",
-    "cardtext5": "Developed the back-end and implemented the API.",
-    "title2": "Some different projects"
+    "cardtext5": "Developed the back-end and implemented the API."
   },
 
  "perso": {
     "title": "Personal projects",
-    "intro": "",
     "titlecard1": "Project's title 1",
     "titlecard2": "Project's title 2",
     "titlecard3": "Project's title 3",
     "cardtext1": "Description 1",
     "cardtext2": "Description 2",
-    "cardtext3": "Description 3" 
+    "cardtext3": "Description 3"
+  },
+
+  "card": {
+ "subtitle":  "See the project"
   },
 
 "contact": {

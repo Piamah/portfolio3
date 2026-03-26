@@ -1,7 +1,10 @@
 import React from "react";
 import { GoLinkExternal } from "react-icons/go";
+import { useTranslation } from "react-i18next";
 
 const Card = ({ title, subtitle, tech, link }) => {
+  const { t } = useTranslation();
+
   return (
     <a
       href={link}
@@ -65,7 +68,7 @@ const Card = ({ title, subtitle, tech, link }) => {
             className="font-Jost text-[0.6rem] tracking-[0.2em] uppercase opacity-50"
             style={{ color: "#685173" }}
           >
-            Voir le projet
+            {t("card.subtitle")}
           </span>
           <span
             className="w-7 h-7 flex items-center justify-center rounded-full transition-all duration-200 group-hover:scale-110"

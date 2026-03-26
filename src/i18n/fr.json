@@ -1,16 +1,21 @@
 {
 
+"meta": {
+    "title": "Piama — Développeuse Web Front-End",
+    "description": "Portfolio de Piama, développeuse web front-end passionnée par React, JavaScript et le design. Découvrez mes projets et contactez-moi."
+},
+
 "nav" : {
     "title1": "A propos",
     "title2": "Projets",
     "title3": "Contact"
 },
 
-"home": {
-    "title1": "Hello ! Bienvenue sur mon site !",
-    "title2": "Des questions ?",
-    "title3": "Un projet ?",
-    "title4": "Contacte moi !"
+"subtitle": {
+    "title1": "— Un peu plus sur moi —",
+    "title2": "— Un aspect plus personnel —",
+    "title3": "— Les créations professionnelles —",
+    "title4": "— Les créations personnelles —"
   },
 
   "about": {
@@ -42,7 +47,7 @@
 
   "projects": {
     "title": "Projets professionnels",
-    "intro": "",
+    "intro":"",
     "titlecard1": "Agence Booki",
     "titlecard2": "Sophie Bluel",
     "titlecard3": "Nina Carducci",
@@ -52,19 +57,22 @@
     "cardtext2": "Développer la page de présentation, la page de connexion et la modale.",
     "cardtext3": "Optimisation SEO, optimisation des images, optimisation du code et de sa structure.",
     "cardtext4": "Refonte du site en JavaScript avec NodeJS et React.",
-    "cardtext5": "Développement de la partie back-end du site et mise en place de l'API.",
-    "title2": "Les projets un peu différents"
+    "cardtext5": "Développement de la partie back-end du site et mise en place de l'API."
   },
 
  "perso": {
     "title": "Projets personnels",
-    "intro": "",
+    "intro":"",
     "titlecard1": "Titre projet 1",
     "titlecard2": "Titre projet 2",
     "titlecard3": "Titre projet 3",
     "cardtext1": "Description 1",
     "cardtext2": "Description 2",
-    "cardtext3": "Description 3" 
+    "cardtext3": "Description 3"
+  },
+
+  "card": {
+ "subtitle":  "Voir le projet"
   },
 
 "contact": {

@@ -3,16 +3,19 @@ import logo from "../images/logo.webp";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
-  const { t } = useTranslation();
-  const [menuOpen,   setMenuOpen]   = useState(false);
+  const { t, i18n } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "#about-section",    label: t("nav.title1") },
     { href: "#projects-section", label: t("nav.title2") },
-    { href: "#contact-section",   label: t("nav.title3") },
+    { href: "#contact-section",  label: t("nav.title3") },
   ];
   const [scrolled,   setScrolled]   = useState(false);
   const [activeLink, setActiveLink] = useState("");
+
+  const currentLang = i18n.language?.startsWith("fr") ? "fr" : "en";
+  const toggleLang = () => i18n.changeLanguage(currentLang === "fr" ? "en" : "fr");
 
   // ********BLUR SCROLL EFFECT********
   useEffect(() => {
@@ -86,13 +89,44 @@ export default function Header() {
         .hdr-mobile-menu {
           animation: hdr-menuIn .25s ease both;
         }
+
+        /* ===== LANG SWITCH ===== */
+        .lang-switch {
+          display: flex;
+          align-items: center;
+          gap: 0;
+          border-radius: 999px;
+          padding: 3px;
+          background: rgba(104,81,115,0.08);
+          border: 1px solid rgba(104,81,115,0.15);
+        }
+        .lang-btn {
+          font-family: 'Jost', sans-serif;
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          padding: 3px 9px;
+          border-radius: 999px;
+          border: none;
+          cursor: pointer;
+          transition: all .2s ease;
+          background: transparent;
+          color: #a08aaa;
+        }
+        .lang-btn.active {
+          background: linear-gradient(135deg, var(--hover-text--start) 0%, var(--hover-text--end) 100%);
+          color: #fff;
+          box-shadow: 0 2px 8px rgba(244,58,151,0.25);
+        }
+        .lang-btn:not(.active):hover {
+          color: #685173;
+        }
       `}</style>
 
       <header
         className={`hdr-root fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "py-2 shadow-lg"
-            : "py-3"
+          scrolled ? "py-2 shadow-lg" : "py-3"
         }`}
         style={{
           background: scrolled
@@ -116,6 +150,8 @@ export default function Header() {
             <img
               src={logo}
               alt="Logo Piama"
+              width="44"
+              height="44"
               className="w-auto h-9 md:h-11 transition-transform duration-200 group-hover:scale-105"
             />
           </a>
@@ -134,7 +170,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* ********NAME******** */}
+          {/* ********NAME + LANG SWITCH******** */}
           <div className="hidden md:flex items-center gap-4">
             <span
               className="text-[0.7rem] tracking-[0.2em] uppercase"
@@ -142,6 +178,24 @@ export default function Header() {
             >
               Athénaïs Lecomte
             </span>
+
+            {/* Switch FR / EN */}
+            <div className="lang-switch">
+              <button
+                className={`lang-btn ${currentLang === "fr" ? "active" : ""}`}
+                onClick={toggleLang}
+                aria-label="Passer en français"
+              >
+                FR
+              </button>
+              <button
+                className={`lang-btn ${currentLang === "en" ? "active" : ""}`}
+                onClick={toggleLang}
+                aria-label="Switch to English"
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           {/* ********BURGER MOBILE*********/}
@@ -184,6 +238,30 @@ export default function Header() {
                   {label}
                 </a>
               ))}
+
+              {/* Switch FR / EN mobile */}
+              <div className="px-6 py-3 flex items-center gap-3"
+                style={{ borderTop: "1px solid rgba(104,81,115,0.08)" }}>
+                <span className="text-[0.6rem] tracking-[0.2em] uppercase" style={{ color: "#a08aaa", fontFamily: "Jost" }}>
+                  Langue
+                </span>
+                <div className="lang-switch">
+                  <button
+                    className={`lang-btn ${currentLang === "fr" ? "active" : ""}`}
+                    onClick={toggleLang}
+                    aria-label="Passer en français"
+                  >
+                    FR
+                  </button>
+                  <button
+                    className={`lang-btn ${currentLang === "en" ? "active" : ""}`}
+                    onClick={toggleLang}
+                    aria-label="Switch to English"
+                  >
+                    EN
+                  </button>
+                </div>
+              </div>
             </nav>
           </div>
         )}
