@@ -101,6 +101,37 @@
     "proProjects": "Projets pro",
     "personalProjects": "Projets perso",
     "contact": "Contact"
-  }
+  },
 
+  "legal": {
+    "eyebrow": "— informations légales —",
+    "title": "Mentions légales",
+    "updatedAt": "Dernière mise à jour : avril 2025",
+
+    "editor.title": "Éditeur du site",
+    "editor.note": "En tant que particulier, vous n'êtes pas tenu de mentionner votre adresse postale complète — une adresse e-mail de contact suffit au titre de la LCEN (art. 6 III).",
+    "editor.name": "Nom",
+    "editor.status": "Statut",
+    "editor.statusValue": "Particulier",
+    "editor.email": "Adresse e-mail",
+    "editor.pseudo": "Pseudo",
+
+    "host.title": "Hébergeur",
+    "host.company": "Raison sociale",
+    "host.address": "Adresse",
+    "host.site": "Site",
+
+    "ip.title": "Propriété intellectuelle",
+    "ip.content": "L'ensemble du contenu de ce site est la propriété exclusive d'Athénaïs Lecomte, sauf mention contraire. Toute reproduction, même partielle, sans autorisation préalable est interdite. La direction artistique de ce site s'inspire du travail de Duane Levi Smith, visible sur Behance.",
+
+    "data.title": "Données personnelles & formulaire de contact",
+    "data.p1": "Le formulaire de contact collecte votre nom, adresse e-mail et message, uniquement dans le but de répondre à vos demandes. Ces données sont transmises via le service EmailJS et ne sont ni conservées sur ce site, ni cédées à des tiers.",
+    "data.p2": "Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en écrivant à :",
+
+    "cookies.title": "Cookies",
+    "cookies.content": "Ce site n'utilise pas de cookies à des fins de traçage ou de publicité. Aucune donnée de navigation n'est collectée sans votre consentement.",
+
+    "links.title": "Liens hypertextes",
+    "links.content": "Ce site peut contenir des liens vers des sites tiers (GitHub, Instagram, Spotify…). Athénaïs Lecomte n'est pas responsable du contenu de ces sites externes."
+  }
 }

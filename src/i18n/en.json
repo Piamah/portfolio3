@@ -99,5 +99,37 @@
     "proProjects": "Professional Projects",
     "personalProjects": "Personal Projects",
     "contact": "Contact"
-  }
+  },
+
+  "legal": {
+  "eyebrow": "— legal information —",
+  "title": "Legal Notice",
+  "updatedAt": "Last updated: April 2025",
+
+  "editor.title": "Website Publisher",
+  "editor.note": "As a private individual, you are not required to disclose your full postal address — a contact email is sufficient under French LCEN law (art. 6 III).",
+  "editor.name": "Name",
+  "editor.status": "Status",
+  "editor.statusValue": "Private individual",
+  "editor.email": "Email address",
+  "editor.pseudo": "Alias",
+
+  "host.title": "Hosting Provider",
+  "host.company": "Company",
+  "host.address": "Address",
+  "host.site": "Website",
+
+  "ip.title": "Intellectual Property",
+  "ip.content": "All content on this site is the exclusive property of Athénaïs Lecomte, unless otherwise stated. Any reproduction, even partial, without prior authorisation is prohibited. The artistic direction of this site is inspired by the work of Duane Levi Smith, visible on Behance.",
+
+  "data.title": "Personal Data & Contact Form",
+  "data.p1": "The contact form collects your name, email address and message, solely for the purpose of responding to your enquiries. This data is transmitted via the EmailJS service and is neither stored on this site nor shared with third parties.",
+  "data.p2": "In accordance with the GDPR and the French Data Protection Act, you have the right to access, correct and delete your data by writing to:",
+
+  "cookies.title": "Cookies",
+  "cookies.content": "This site does not use cookies for tracking or advertising purposes. No browsing data is collected without your consent.",
+
+  "links.title": "Hyperlinks",
+  "links.content": "This site may contain links to third-party websites (GitHub, Instagram, Spotify…). Athénaïs Lecomte is not responsible for the content of these external sites."
+}
 }

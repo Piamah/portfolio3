@@ -7,9 +7,9 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#about-section",    label: t("nav.title1") },
-    { href: "#projects-section", label: t("nav.title2") },
-    { href: "#contact-section",  label: t("nav.title3") },
+    { href: "/#about-section",    label: t("nav.title1") },
+    { href: "/#projects-section", label: t("nav.title2") },
+    { href: "/#contact-section",  label: t("nav.title3") },
   ];
   const [scrolled,   setScrolled]   = useState(false);
   const [activeLink, setActiveLink] = useState("");
