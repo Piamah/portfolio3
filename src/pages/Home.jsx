@@ -91,13 +91,12 @@ export default function Home() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_4p4oogl",
-        "template_miz9f98",
-        form.current,
-        "lmjbq4SV8vDREMto6"
-      )
+    emailjs.sendForm(
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  form.current,
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+)
       .then(
         () => { setSuccess(true); form.current.reset(); },
         (error) => { console.error(error); setSuccess(false); }
@@ -279,25 +278,38 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ─── PROJETS PERSO ─── */}
-        <section className="px-5 md:px-10 mt-28 mb-20">
-          <div className="mb-10">
-            <span className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55" style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
-              {t("subtitle.title4")}
-            </span>
-            <h2 className="mt-2 font-CormorantGaramond text-[clamp(2.2rem,6vw,3.8rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]">
-              {t("perso.title")}
-            </h2>
-          </div>
-          <p className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] mb-8 opacity-80 w-full md:w-[65%] leading-relaxed">
-            {t("perso.intro")}
-          </p>
-          <div className="flex flex-wrap gap-6 justify-start">
-            {cardsperso.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
-          </div>
-        </section>
+       {/* ─── PROJETS PERSO ─── */}
+<section className="px-5 md:px-10 mt-28 mb-20">
+  <div className="mb-10">
+    <span className="text-[0.6rem] tracking-[0.35em] uppercase opacity-55" style={{ color: "#685173", fontFamily: "'Jost', sans-serif", fontWeight: 400 }}>
+      {t("subtitle.title4")}
+    </span>
+    <h2 className="mt-2 font-CormorantGaramond text-[clamp(2.2rem,6vw,3.8rem)] font-light tracking-[0.08em] text-white [text-shadow:1px_1px_1px_#685173,2px_2px_1px_#685173]">
+      {t("perso.title")}
+    </h2>
+  </div>
+  <p className="font-Jost text-[clamp(0.9rem,2vw,1rem)] text-[#685173] mb-8 opacity-80 w-full md:w-[65%] leading-relaxed">
+    {t("perso.intro")}
+  </p>
+
+  {/* Message "en construction" */}
+  <div
+    className="w-full max-w-[500px] rounded-2xl px-8 py-10 flex flex-col gap-3"
+    style={{
+      background: "rgba(255,255,255,0.18)",
+      border: "1.5px dashed rgba(104,81,115,0.25)",
+      backdropFilter: "blur(8px)",
+    }}
+  >
+     <span className="text-[0.6rem] tracking-[0.3em] uppercase opacity-40 font-Jost" style={{ color: "#685173" }}>
+      — {t("perso.wipSub")}
+    </span>
+    <p className="font-DMSerifDisplay text-[clamp(1rem,2.5vw,1.3rem)] text-[#685173] leading-relaxed">
+      {t("perso.wip")}
+    </p>
+  </div>
+
+</section>
 
         {/* ─── CONTACT ─── */}
         <section className="px-5 md:px-10 mt-10 pb-10" id="contact-section">

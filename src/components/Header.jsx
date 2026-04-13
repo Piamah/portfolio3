@@ -138,7 +138,7 @@ export default function Header() {
             : "1px solid transparent",
         }}
       >
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between gap-6">
+        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between gap-6 relative">
 
           {/*********LOGO*********/}
           <a
@@ -157,7 +157,7 @@ export default function Header() {
           </a>
 
           {/* ********NAV BAR DESKTOP******** */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {navLinks.map(({ href, label }) => (
               <a
                 key={href}

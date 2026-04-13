@@ -60,12 +60,15 @@
 
  "perso": {
     "title": "Personal projects",
+    "intro":"",
     "titlecard1": "Project's title 1",
     "titlecard2": "Project's title 2",
     "titlecard3": "Project's title 3",
     "cardtext1": "Description 1",
     "cardtext2": "Description 2",
-    "cardtext3": "Description 3"
+    "cardtext3": "Description 3",
+    "wip": "Nothing to see here just yet, but it's on its way.",
+    "wipSub": "Work in progress"
   },
 
   "card": {
